@@ -161,7 +161,10 @@ async function seedRevenue(client) {
 }
 
 async function main() {
+  console.log('INSIDE MAIN FUNC 🍅🍅')
   const client = await db.connect();
+
+  console.log('client ===> 🌵🌵', client)
 
   await seedUsers(client);
   await seedCustomers(client);
